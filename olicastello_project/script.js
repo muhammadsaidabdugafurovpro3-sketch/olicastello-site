@@ -156,11 +156,78 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 /* ── CONTACT FORM ───────────────────────────────────────── */
 function handleForm(e) {
+
   e.preventDefault();
-  const successMsg = document.getElementById('formOk');
-  if (successMsg) {
-    successMsg.style.display = 'block';
-    e.target.reset();
-    setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
-  }
+
+  const form = e.target;
+
+  const inputs = form.querySelectorAll('input');
+
+  const name = inputs[0]?.value || '';
+
+  const phone = inputs[1]?.value || '';
+
+  const textarea =
+    form.querySelector('textarea');
+
+  const message = textarea?.value || '';
+
+  const text = `
+🫒 Новая заявка OliCastelló
+
+👤 Имя: ${name}
+
+📞 Телефон: ${phone}
+
+💬 Сообщение:
+${message}
+`;
+
+  fetch('https://api.telegram.org/bot8943204180:AAGhIuOoeQQwKn0v8120Fn6IWMFwCzFmtWg/sendMessage', {
+
+    method: 'POST',
+
+    headers: {
+      'Content-Type': 'application/json'
+    },
+
+    body: JSON.stringify({
+
+      chat_id: '1220871393',
+
+      text: text
+
+    })
+
+  })
+
+  .then(() => {
+
+    const ok =
+      document.getElementById('formOk');
+
+    if (ok) {
+      ok.style.display = 'block';
+    }
+
+    form.reset();
+
+    setTimeout(() => {
+
+      if (ok) {
+        ok.style.display = 'none';
+      }
+
+    }, 5000);
+
+  })
+
+  .catch(err => {
+
+    console.log(err);
+
+    alert('Ошибка отправки');
+
+  });
+
 }
