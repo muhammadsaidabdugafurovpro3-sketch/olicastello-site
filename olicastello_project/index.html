@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OliCastelló — премиальное оливковое масло Extra Virgin сорта Пикуаль из Испании. Доставка по Ташкенту.">
+  <title>OliCastelló — Премиальное оливковое масло в Ташкенте</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ═══ NAVIGATION ═══════════════════════════════════════ -->
+<nav id="mainNav">
+  <a href="#hero" class="nav-logo">
+    <img id="navLogo" src="images/logo-dark.png" alt="OliCastelló">
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">О бренде</a></li>
+    <li><a href="#products">Продукция</a></li>
+    <li><a href="#gallery">Галерея</a></li>
+    <li><a href="#benefits">Польза</a></li>
+    <li><a href="#horeca">Бизнесу</a></li>
+    <li><a href="#contact">Контакты</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Сменить тему">
+      <svg id="themeIcon" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="5"/>
+        <line x1="12" y1="1" x2="12" y2="3"/>
+        <line x1="12" y1="21" x2="12" y2="23"/>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+        <line x1="1" y1="12" x2="3" y2="12"/>
+        <line x1="21" y1="12" x2="23" y2="12"/>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+      </svg>
+    </button>
+    <a href="https://t.me/OliCastello_bot" target="_blank" class="btn-nav">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none">
+        <path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      Заказать
+    </a>
+    <div class="burger" id="burger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE MENU ══════════════════════════════════════ -->
+<div class="mob" id="mobMenu">
+  <button class="mob-x" onclick="toggleMenu()">✕</button>
+  <a href="#about">О бренде</a>
+  <a href="#products">Продукция</a>
+  <a href="#gallery">Галерея</a>
+  <a href="#benefits">Польза</a>
+  <a href="#horeca">Бизнесу</a>
+  <a href="#contact">Контакты</a>
+  <a href="https://t.me/OliCastello_bot" target="_blank" class="btn-primary" style="margin-top:.5rem">
+    Заказать в Telegram
+  </a>
+</div>
+
+<!-- ═══ HERO ═════════════════════════════════════════════ -->
+<section id="hero">
+  <img class="hero-bg" src="images/hero-main.jpg" alt="OliCastelló — премиальное оливковое масло">
+  <div class="hero-ov"></div>
+  <div class="hero-cnt">
+    <div class="hero-eye reveal">Ташкент · с 1879 года</div>
+    <h1 class="hero-h1 reveal reveal-delay-1">
+      Настоящее<br>оливковое<br><em>масло — здесь</em>
+    </h1>
+    <p class="hero-p reveal reveal-delay-2">
+      OliCastelló — премиальное Extra Virgin сорта Пикуаль из Испании.
+      Семейная традиция с 1879 года, теперь в Ташкенте.
+    </p>
+    <div class="hero-pills reveal reveal-delay-2">
+      <span class="hero-pill">Extra Virgin</span>
+      <span class="hero-pill">Холодный отжим</span>
+      <span class="hero-pill">Испания · Picual</span>
+      <span class="hero-pill">100% натурально</span>
+    </div>
+    <div class="hero-btns reveal reveal-delay-3">
+      <a href="#products" class="btn-primary">Смотреть каталог</a>
+      <a href="#about" class="btn-ghost">О бренде</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <div class="hero-badge-n">100%</div>
+    <div class="hero-badge-t">Extra Virgin · Сертифицировано</div>
+  </div>
+</section>
+
+<!-- ═══ MARQUEE ══════════════════════════════════════════ -->
+<div class="marquee">
+  <div class="marquee-t">
+    <span>Extra Virgin Olive Oil</span><span class="dot">·</span>
+    <span>Без химии и добавок</span><span class="dot">·</span>
+    <span>Холодный отжим</span><span class="dot">·</span>
+    <span>des de 1879</span><span class="dot">·</span>
+    <span>Сорт Пикуаль · Испания</span><span class="dot">·</span>
+    <span>Доставка по Ташкенту</span><span class="dot">·</span>
+    <span>HoReCa партнёрство</span><span class="dot">·</span>
+    <!-- Duplicated for seamless loop -->
+    <span>Extra Virgin Olive Oil</span><span class="dot">·</span>
+    <span>Без химии и добавок</span><span class="dot">·</span>
+    <span>Холодный отжим</span><span class="dot">·</span>
+    <span>des de 1879</span><span class="dot">·</span>
+    <span>Сорт Пикуаль · Испания</span><span class="dot">·</span>
+    <span>Доставка по Ташкенту</span><span class="dot">·</span>
+    <span>HoReCa партнёрство</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ════════════════════════════════════════════ -->
+<section id="about">
+  <div class="about-visual reveal">
+    <img class="about-photo" src="images/hero-about.jpg" alt="Производство OliCastelló">
+    <div class="about-ov"></div>
+    <div class="about-chip">
+      <div class="about-chip-n">1879</div>
+      <div class="about-chip-l">Основан в Испании</div>
+    </div>
+  </div>
+  <div>
+    <div class="s-eye reveal">О бренде</div>
+    <h2 class="s-h2 reveal reveal-delay-1">
+      Испанское<br>качество<br><em>в каждой капле</em>
+    </h2>
+    <p class="about-p reveal reveal-delay-2">
+      OliCastelló — это не просто оливковое масло. Это выбор людей, которые ценят качество, вкус и заботятся о своём здоровье.
+    </p>
+    <p class="about-p reveal reveal-delay-2">
+      Мы привозим в Ташкент оливковое масло первого холодного отжима из Испании — страны с многовековыми традициями производства. Испанские оливки сорта Picual известны насыщенным вкусом и высоким качеством.
+    </p>
+    <p class="about-p reveal reveal-delay-3">
+      Каждая бутылка проходит строгий контроль. Без примесей, без компромиссов — только чистый вкус натуральных оливок. OliCastelló — сочетание испанского качества и премиального вкуса.
+    </p>
+    <div class="val-grid reveal reveal-delay-3">
+      <div class="val">
+        <h4>Испания</h4>
+        <p>Оливки сорта Пикуаль из испанских садов с многовековой традицией.</p>
+      </div>
+      <div class="val">
+        <h4>Чистота</h4>
+        <p>Первый холодный отжим. Без рафинирования и добавок.</p>
+      </div>
+      <div class="val">
+        <h4>Здоровье</h4>
+        <p>Высокое содержание полифенолов, олеиновой кислоты и витамина E.</p>
+      </div>
+      <div class="val">
+        <h4>Традиция</h4>
+        <p>Семейный рецепт с 1879 года — проверено поколениями.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUCTS ══════════════════════════════════════════ -->
+<section id="products" style="padding-bottom:0">
+  <div class="prod-hd">
+    <div class="s-eye center">Наша продукция</div>
+    <h2 class="s-h2" style="text-align:center">Выберите <em>своё</em> масло</h2>
+    <p class="s-lead" style="text-align:center;margin:0 auto">
+      Сорт Пикуаль — испанская классика с насыщенным вкусом. Четыре формата под любой запрос.
+    </p>
+  </div>
+
+  <!-- Filter -->
+  <div class="filter-bar">
+    <button class="fb active" onclick="filterProducts('all', this)">Все</button>
+    <button class="fb" onclick="filterProducts('1l', this)">1 литр</button>
+    <button class="fb" onclick="filterProducts('5l', this)">5 литров</button>
+    <button class="fb" onclick="filterProducts('metal', this)">Металл</button>
+    <button class="fb" onclick="filterProducts('plastic', this)">Пластик</button>
+  </div>
+
+  <!-- Slider -->
+  <div class="slider-wrap">
+    <div class="slider-track" id="sliderTrack">
+
+      <!-- Slide 1: 1L Plastic -->
+      <div class="slide active">
+        <div class="slide-img-col">
+          <div class="slide-img-bg" style="background:#f2f0eb">
+            <img src="images/product-1l-plastic.jpg" alt="OliCastelló 1L Пластик" class="slide-img" loading="lazy">
+          </div>
+        </div>
+        <div class="slide-info">
+          <div class="slide-eye">Extra Virgin · Picual · Испания</div>
+          <h2 class="slide-name">OliCastelló 1L</h2>
+          <div class="slide-sub">Пластиковая бутылка</div>
+          <div class="slide-price-row">
+            <span class="s-disc">−15%</span>
+            <span class="slide-price">175 000</span>
+            <span class="slide-curr"> сум</span>
+            <span class="s-old">205 000 сум</span>
+          </div>
+          <p class="slide-desc">Тёмная бутылка защищает масло от ультрафиолета. Сорт Пикуаль, холодный отжим.</p>
+          <a href="https://t.me/OliCastello_bot?start=order_1l_plastic" target="_blank" class="btn-tg">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать в Telegram
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 2: 1L Metal -->
+      <div class="slide">
+        <div class="slide-img-col">
+          <div class="slide-img-bg" style="background:#f0ede6">
+            <img src="images/product-1l-metal.jpg" alt="OliCastelló 1L Металл" class="slide-img" loading="lazy">
+          </div>
+        </div>
+        <div class="slide-info">
+          <div class="slide-eye">Extra Virgin · Picual · Испания</div>
+          <h2 class="slide-name">OliCastelló 1L</h2>
+          <div class="slide-sub">Металлическая банка</div>
+          <div class="slide-price-row">
+            <span class="slide-price">185 000</span>
+            <span class="slide-curr"> сум</span>
+          </div>
+          <p class="slide-desc">Жестяная банка — максимальная защита от света и кислорода.</p>
+          <a href="https://t.me/OliCastello_bot?start=order_1l_metal" target="_blank" class="btn-tg">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать в Telegram
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 3: 5L Plastic -->
+      <div class="slide">
+        <div class="slide-img-col">
+          <div class="slide-img-bg" style="background:#edf2e6">
+            <img src="images/product-5l-plastic.jpg" alt="OliCastelló 5L Пластик" class="slide-img" loading="lazy">
+          </div>
+        </div>
+        <div class="slide-info">
+          <div class="slide-eye">Extra Virgin · Picual · Испания</div>
+          <h2 class="slide-name">OliCastelló 5L</h2>
+          <div class="slide-sub">Пластиковая канистра</div>
+          <div class="slide-price-row">
+            <span class="s-disc">−9%</span>
+            <span class="slide-price">840 000</span>
+            <span class="slide-curr"> сум</span>
+            <span class="s-old">920 000 сум</span>
+          </div>
+          <p class="slide-desc">Большая канистра с удобной ручкой. Насыщенный зелёный цвет — признак свежести.</p>
+          <a href="https://t.me/OliCastello_bot?start=order_5l_plastic" target="_blank" class="btn-tg">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать в Telegram
+          </a>
+        </div>
+      </div>
+
+      <!-- Slide 4: 5L Metal -->
+      <div class="slide">
+        <div class="slide-img-col">
+          <div class="slide-img-bg" style="background:#ece8e0">
+            <img src="images/product-5l-metal.jpg" alt="OliCastelló 5L Металл" class="slide-img" loading="lazy">
+          </div>
+        </div>
+        <div class="slide-info">
+          <div class="slide-eye">Extra Virgin · Picual · Испания</div>
+          <h2 class="slide-name">OliCastelló 5L</h2>
+          <div class="slide-sub">Металлическая канистра</div>
+          <div class="slide-price-row">
+            <span class="s-disc">−9%</span>
+            <span class="slide-price">860 000</span>
+            <span class="slide-curr"> сум</span>
+            <span class="s-old">940 000 сум</span>
+          </div>
+          <p class="slide-desc">Профессиональная металлическая канистра для ресторанов и кафе.</p>
+          <a href="https://t.me/OliCastello_bot?start=order_5l_metal" target="_blank" class="btn-tg">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать в Telegram
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /slider-track -->
+
+    <div class="slider-ctrl">
+      <button class="s-arr" onclick="slidePrev()">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="s-dots" id="sliderDots"></div>
+      <div class="s-cnt" id="sliderCnt">1 / 4</div>
+      <button class="s-arr" onclick="slideNext()">
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div><!-- /slider-wrap -->
+</section>
+
+<!-- Product Cards Grid -->
+<div class="catalog-wrap">
+  <div class="catalog-grid" id="catalogGrid">
+
+    <!-- Card 1: 1L Plastic -->
+    <div class="pcard reveal" data-tags="1l plastic">
+      <div class="pcard-badge badge-best">★ Хит продаж</div>
+      <div class="pcard-img-wrap" style="background:#f2f0eb">
+        <img src="images/product-1l-plastic.jpg" alt="OliCastelló 1L Пластик" class="pcard-img" loading="lazy">
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-type">Extra Virgin · Picual · Испания</div>
+        <h3 class="pcard-name">OliCastelló 1L</h3>
+        <div class="pcard-sub">Пластиковая бутылка</div>
+        <p class="pcard-desc">Тёмная бутылка защищает масло от ультрафиолета. Сорт Пикуаль, холодный отжим.</p>
+        <ul class="pcard-feats">
+          <li>Сорт Пикуаль · Испания</li>
+          <li>Холодный отжим</li>
+          <li>Традиция с 1879</li>
+        </ul>
+        <div class="pcard-foot">
+          <div class="pcard-pricing">
+            <div class="pcard-pr-row">
+              <span class="pcard-disc">−15%</span>
+              <span class="pcard-price">175 000</span>
+              <span class="pcard-curr"> сум</span>
+            </div>
+            <div class="pcard-old">205 000 сум</div>
+            <div class="pcard-per">175 000 / л</div>
+          </div>
+          <a href="https://t.me/OliCastello_bot?start=order_1l_plastic" target="_blank" class="btn-card">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2: 1L Metal -->
+    <div class="pcard reveal reveal-delay-1" data-tags="1l metal">
+      <div class="pcard-img-wrap" style="background:#f0ede6">
+        <img src="images/product-1l-metal.jpg" alt="OliCastelló 1L Металл" class="pcard-img" loading="lazy">
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-type">Extra Virgin · Picual · Испания</div>
+        <h3 class="pcard-name">OliCastelló 1L</h3>
+        <div class="pcard-sub">Металлическая банка</div>
+        <p class="pcard-desc">Жестяная банка — максимальная защита от света и кислорода.</p>
+        <ul class="pcard-feats">
+          <li>Металл защищает от окисления</li>
+          <li>100% натуральный</li>
+          <li>Холодный отжим</li>
+        </ul>
+        <div class="pcard-foot">
+          <div class="pcard-pricing">
+            <div class="pcard-pr-row">
+              <span class="pcard-price">185 000</span>
+              <span class="pcard-curr"> сум</span>
+            </div>
+            <div class="pcard-per">185 000 / л</div>
+          </div>
+          <a href="https://t.me/OliCastello_bot?start=order_1l_metal" target="_blank" class="btn-card">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3: 5L Plastic -->
+    <div class="pcard reveal reveal-delay-2" data-tags="5l plastic">
+      <div class="pcard-badge badge-horeca">HoReCa</div>
+      <div class="pcard-img-wrap" style="background:#edf2e6">
+        <img src="images/product-5l-plastic.jpg" alt="OliCastelló 5L Пластик" class="pcard-img" loading="lazy">
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-type">Extra Virgin · Picual · Испания</div>
+        <h3 class="pcard-name">OliCastelló 5L</h3>
+        <div class="pcard-sub">Пластиковая канистра</div>
+        <p class="pcard-desc">Большая канистра с удобной ручкой. Зелёный цвет — признак натуральности.</p>
+        <ul class="pcard-feats">
+          <li>Выгоднее на 9% за литр</li>
+          <li>Удобная ручка</li>
+          <li>Для дома и ресторана</li>
+        </ul>
+        <div class="pcard-foot">
+          <div class="pcard-pricing">
+            <div class="pcard-pr-row">
+              <span class="pcard-disc">−9%</span>
+              <span class="pcard-price">840 000</span>
+              <span class="pcard-curr"> сум</span>
+            </div>
+            <div class="pcard-old">920 000 сум</div>
+            <div class="pcard-per">168 000 / л</div>
+          </div>
+          <a href="https://t.me/OliCastello_bot?start=order_5l_plastic" target="_blank" class="btn-card">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4: 5L Metal -->
+    <div class="pcard reveal reveal-delay-3" data-tags="5l metal">
+      <div class="pcard-badge badge-horeca">HoReCa Pro</div>
+      <div class="pcard-img-wrap" style="background:#ece8e0">
+        <img src="images/product-5l-metal.jpg" alt="OliCastelló 5L Металл" class="pcard-img" loading="lazy">
+      </div>
+      <div class="pcard-body">
+        <div class="pcard-type">Extra Virgin · Picual · Испания</div>
+        <h3 class="pcard-name">OliCastelló 5L</h3>
+        <div class="pcard-sub">Металлическая канистра</div>
+        <p class="pcard-desc">Профессиональная металлическая канистра для ресторанов и кафе.</p>
+        <ul class="pcard-feats">
+          <li>Для ресторанов и кафе</li>
+          <li>Максимальная защита</li>
+          <li>Выгоднее за литр</li>
+        </ul>
+        <div class="pcard-foot">
+          <div class="pcard-pricing">
+            <div class="pcard-pr-row">
+              <span class="pcard-disc">−9%</span>
+              <span class="pcard-price">860 000</span>
+              <span class="pcard-curr"> сум</span>
+            </div>
+            <div class="pcard-old">940 000 сум</div>
+            <div class="pcard-per">172 000 / л</div>
+          </div>
+          <a href="https://t.me/OliCastello_bot?start=order_5l_metal" target="_blank" class="btn-card">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none"><path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            Заказать
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /catalog-grid -->
+
+  <div style="text-align:center;margin-top:2.25rem">
+    <p style="font-size:.78rem;color:var(--muted);background:var(--gold-pl);display:inline-block;padding:.55rem 1.3rem;border-radius:30px;border:1px solid rgba(184,146,30,.2)">
+      💬 Актуальные цены — <a href="https://t.me/OliCastello_bot" target="_blank" style="color:var(--olive);font-weight:600">@OliCastello_bot</a>
+    </p>
+  </div>
+</div>
+
+<!-- ═══ GALLERY ═══════════════════════════════════════════ -->
+<section id="gallery">
+  <div class="s-eye reveal">Галерея</div>
+  <h2 class="s-h2 reveal reveal-delay-1">Вкус, который <em>видно</em></h2>
+  <div class="gallery-grid">
+    <div class="g-item tall reveal">
+      <img src="images/gallery-3.jpg" alt="OliCastelló Bio Organic" loading="lazy">
+    </div>
+    <div class="g-item reveal reveal-delay-1">
+      <img src="images/gallery-2.jpg" alt="Оливковое масло" loading="lazy">
+    </div>
+    <div class="g-item reveal reveal-delay-2">
+      <img src="images/gallery-4.jpg" alt="OliCastelló с овощами" loading="lazy">
+    </div>
+    <div class="g-item reveal reveal-delay-1">
+      <img src="images/gallery-5.jpg" alt="OliCastelló 1L" loading="lazy">
+    </div>
+    <div class="g-item reveal reveal-delay-2">
+      <img src="images/gallery-7.jpg" alt="OliCastelló атмосфера" loading="lazy">
+    </div>
+    <div class="g-item tall reveal reveal-delay-3">
+      <img src="images/gallery-6.jpg" alt="Коллекция OliCastelló" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BENEFITS ══════════════════════════════════════════ -->
+<section id="benefits">
+  <div class="b-hd">
+    <div class="s-eye">Польза оливкового масла</div>
+    <h2 class="s-h2" style="color:#fff">
+      Почему оливковое масло —<br><em style="color:var(--gold2)">выбор здорового человека</em>
+    </h2>
+    <p class="s-lead">Тысячи лет средиземноморской кулинарии. Сотни научных исследований. Один вывод.</p>
+  </div>
+  <div class="b-grid">
+    <div class="bitem reveal">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+      <div class="bitem-t">Здоровье сердца</div>
+      <p class="bitem-p">Мононенасыщенные жирные кислоты снижают «плохой» холестерин и защищают сосуды.</p>
+    </div>
+    <div class="bitem reveal reveal-delay-1">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
+      <div class="bitem-t">Антиоксидантная защита</div>
+      <p class="bitem-p">Полифенолы и витамин E нейтрализуют свободные радикалы и замедляют старение клеток.</p>
+    </div>
+    <div class="bitem reveal reveal-delay-2">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+      <div class="bitem-t">Противовоспалительный</div>
+      <p class="bitem-p">Олеокантал снижает воспаление — природный аналог ибупрофена без побочных эффектов.</p>
+    </div>
+    <div class="bitem reveal reveal-delay-3">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+      <div class="bitem-t">Красота и кожа</div>
+      <p class="bitem-p">Витамин E увлажняет кожу изнутри, укрепляет волосы и ногти. Проверено веками.</p>
+    </div>
+    <div class="bitem reveal">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+      <div class="bitem-t">Пищеварение</div>
+      <p class="bitem-p">Стимулирует желчеотделение, улучшает работу кишечника, защищает слизистую желудка.</p>
+    </div>
+    <div class="bitem reveal reveal-delay-1">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+      <div class="bitem-t">Контроль веса</div>
+      <p class="bitem-p">Создаёт сытость, снижает тягу к перееданию. Лучший жир для следящих за весом.</p>
+    </div>
+    <div class="bitem reveal reveal-delay-2">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
+      <div class="bitem-t">Снижение риска диабета</div>
+      <p class="bitem-p">Регулирует уровень сахара в крови, повышает чувствительность к инсулину.</p>
+    </div>
+    <div class="bitem reveal reveal-delay-3">
+      <div class="bitem-icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+      <div class="bitem-t">Защита мозга</div>
+      <p class="bitem-p">Полезные жиры поддерживают когнитивные функции и снижают риск болезни Альцгеймера.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ HORECA ════════════════════════════════════════════ -->
+<section id="horeca" style="padding:0">
+  <div class="horeca-vis">
+    <img class="horeca-photo" src="images/gallery-6.jpg" alt="OliCastelló для бизнеса" loading="lazy">
+    <div class="horeca-ov"></div>
+    <div class="horeca-stats">
+      <div class="hstat reveal"><div class="hstat-n">50+</div><div class="hstat-l">заведений-партнёров</div></div>
+      <div class="hstat reveal reveal-delay-1"><div class="hstat-n">7</div><div class="hstat-l">дней доставка</div></div>
+      <div class="hstat reveal reveal-delay-2"><div class="hstat-n">5L</div><div class="hstat-l">мин. объём HoReCa</div></div>
+      <div class="hstat reveal reveal-delay-3"><div class="hstat-n">−20%</div><div class="hstat-l">скидка для бизнеса</div></div>
+    </div>
+  </div>
+  <div class="horeca-cnt">
+    <div class="s-eye reveal">Для бизнеса · HoReCa</div>
+    <h2 class="s-h2 reveal reveal-delay-1">Ваши гости<br>почувствуют<br><em>разницу</em></h2>
+    <p class="s-lead reveal reveal-delay-2">Работаем с ресторанами, кафе, отелями и кондитерскими по всему Ташкенту. Специальные условия, регулярные поставки, персональный менеджер.</p>
+    <ul class="h-list reveal reveal-delay-3">
+      <li><span class="h-num">01</span><span>Специальные цены от объёма — чем больше заказ, тем выгоднее условия.</span></li>
+      <li><span class="h-num">02</span><span>Регулярные поставки без задержек — ваша кухня никогда не останется без масла.</span></li>
+      <li><span class="h-num">03</span><span>Персональный менеджер и дегустационные образцы перед подписанием договора.</span></li>
+      <li><span class="h-num">04</span><span>Возможность брендирования упаковки под ваш ресторан при больших объёмах.</span></li>
+    </ul>
+    <a href="#contact" class="btn-primary reveal reveal-delay-3">Стать партнёром</a>
+  </div>
+</section>
+
+<!-- ═══ TRUST ══════════════════════════════════════════════ -->
+<section id="trust">
+  <div class="s-eye center">Отзывы клиентов</div>
+  <p class="trust-q reveal">
+    "Попробовала — и больше не могу использовать обычное. Разница колоссальная: аромат, вкус, ощущение натуральности."
+  </p>
+  <div class="trust-who reveal">— Нилуфар А., Ташкент · постоянный клиент</div>
+  <div class="tcards">
+    <div class="tcard reveal">
+      <div class="tcard-stars">★★★★★</div>
+      <p>«Долго искал нормальное оливковое масло в Ташкенте. OliCastelló — первые, кто реально поставляет качество.»</p>
+      <cite>— Аксель Г., шеф-повар</cite>
+    </div>
+    <div class="tcard reveal reveal-delay-1">
+      <div class="tcard-stars">★★★★★</div>
+      <p>«Взяли оптом для кафе. Цены честные, доставка вовремя, менеджер всегда на связи.»</p>
+      <cite>— Лейла Т., Cafeteria Tashkent</cite>
+    </div>
+    <div class="tcard reveal reveal-delay-2">
+      <div class="tcard-stars">★★★★★</div>
+      <p>«Беру для всей семьи. Знаю, что это чисто и безопасно. Спасибо OliCastelló!»</p>
+      <cite>— Сабина Р., Ташкент</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══════════════════════════════════════════ -->
+<section id="contact">
+  <div>
+    <div class="c-eye">Контакты</div>
+    <h2 class="c-h2">Свяжитесь<br><em>с нами</em></h2>
+    <p class="c-lead">Вопросы по продукции, оптовые заказы или просто хотите попробовать — мы всегда на связи.</p>
+    <div class="citem">
+      <div class="citem-ico"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></div>
+      <div><div class="citem-lbl">Telegram-бот</div><div class="citem-val"><a href="https://t.me/OliCastello_bot" target="_blank">@OliCastello_bot</a></div></div>
+    </div>
+    <div class="citem">
+      <div class="citem-ico"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
+      <div><div class="citem-lbl">Instagram</div><div class="citem-val"><a href="https://www.instagram.com/olicastello.uz" target="_blank">@olicastello.uz</a></div></div>
+    </div>
+    <div class="citem">
+      <div class="citem-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+      <div><div class="citem-lbl">Расположение</div><div class="citem-val">Ташкент, Узбекистан</div></div>
+    </div>
+  </div>
+  <div>
+    <h3 style="font-family:var(--font-d);font-size:1.35rem;font-weight:300;color:#fff;margin-bottom:.35rem">Написать нам</h3>
+    <p style="font-size:.8rem;color:rgba(255,255,255,.38);margin-bottom:1.4rem">Ответим в течение нескольких часов</p>
+    <form class="cform" onsubmit="handleForm(event)">
+      <div class="f-row">
+        <div class="f-g"><label>Ваше имя</label><input type="text" placeholder="Акбар Юсупов" required></div>
+        <div class="f-g"><label>Телефон / Telegram</label><input type="text" placeholder="+998 90 000 00 00"></div>
+      </div>
+      <div class="f-g">
+        <label>Тип запроса</label>
+        <select>
+          <option>Розничный заказ</option>
+          <option>HoReCa / Оптовая закупка</option>
+          <option>Дистрибьюторство</option>
+          <option>Вопрос о продукции</option>
+          <option>Другое</option>
+        </select>
+      </div>
+      <div class="f-g"><label>Сообщение</label><textarea placeholder="Расскажите, чем мы можем помочь..."></textarea></div>
+      <button type="submit" class="btn-sub">Отправить запрос →</button>
+    </form>
+    <div id="formOk" style="display:none;margin-top:1rem;padding:.85rem 1.1rem;background:rgba(75,93,58,.25);border:1px solid rgba(75,93,58,.5);border-radius:6px;color:rgba(255,255,255,.9);font-size:.84rem">
+      ✓ Спасибо! Мы получили ваше сообщение.
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ════════════════════════════════════════════ -->
+<footer>
+  <div class="foot-in">
+    <a href="#hero" class="foot-logo">
+      <img id="footLogo" src="images/logo-light.png" alt="OliCastelló">
+    </a>
+    <div class="foot-links">
+      <a href="#about">О бренде</a>
+      <a href="#products">Продукция</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#benefits">Польза</a>
+      <a href="#horeca">HoReCa</a>
+      <a href="#contact">Контакты</a>
+      <a href="https://t.me/OliCastello_bot" target="_blank">Telegram</a>
+      <a href="https://www.instagram.com/olicastello.uz" target="_blank">Instagram</a>
+    </div>
+    <div class="foot-copy">© 2025 OliCastelló · Ташкент · des de 1879</div>
+  </div>
+</footer>
+
+<!-- Floating CTA -->
+<a href="https://t.me/OliCastello_bot" target="_blank" class="fcta" id="fcta">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+    <path d="M21.5 2L2 10.5l6.5 2 2 6.5L21.5 2z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </svg>
+  Заказать
+</a>
+
+<!-- Scripts -->
+<script src="script.js"></script>
+</body>
+</html>
