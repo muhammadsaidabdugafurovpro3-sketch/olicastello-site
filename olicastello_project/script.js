@@ -183,7 +183,7 @@ function handleForm(e) {
 ${message}
 `;
 
-  fetch('https://api.telegram.org/bot8943204180:AAGhIuOoeQQwKn0v8120Fn6IWMFwCzFmtWg/sendMessage', {
+  fetch('https://api.telegram.org/bot8943204180:AAGwjn1fm4toAnky_yYiZzvO0Y826-7T29U/sendMessage', {
 
     method: 'POST',
 
